@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsList</title>
+
+</head>
+<body>
+{% extends 'CCA/base.html' %}
+{% block body %}
+
+<div class="alert alert-dark mt-5" role="alert">
+<h1 class="mt-2" style="color:#212F3D;">{{user}}'s ID: {{user.id}}</h1>
+
+
+  <h2 class="alert-heading" style="color:#212F3D;">Thanks {{user}} for login</h2>
+
+  <hr>
+
+ <a href="{% url 'CCA:test' %}"><center><button class="btn btn-outline-dark" style="width:100%" type="button"> Go to test</button></center></a>
+ </div>
+
+{% endblock %}
+</body>
+</html>

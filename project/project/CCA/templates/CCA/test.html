@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NewsList</title>
+
+</head>
+<body>
+{% extends 'CCA/base.html' %}
+{% block body %}
+
+<div class="container-fluid">
+  
+</div>
+{% include 'CCA/fields.html' %}
+{{field_id}}
+<form action="{% url 'CCA:english' field_id %}" method='Post'>
+	{% csrf_token %}
+  {% include 'CCA/main.html' %}
+
+</form>
+{% endblock %}
+</body>
+</html>
